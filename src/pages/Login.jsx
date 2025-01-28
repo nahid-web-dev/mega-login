@@ -55,12 +55,12 @@ const Login = () => {
         <form className="space-y-2 " onSubmit={handleSubmit} >
           <h2 className="text-[#b7a690] text-lg font-semibold text-center">Already have an account?</h2>
           <div>
-            <label
+            {/* <label
               htmlFor="email"
               className="block text-gray-700 font-medium"
             >
               Email
-            </label>
+            </label> */}
             <input
               ref={emailRef}
               type="text"
@@ -69,12 +69,12 @@ const Login = () => {
             />
           </div>
           <div>
-            <label
+            {/* <label
               htmlFor="password"
               className="block text-gray-700 font-medium"
             >
               Password
-            </label>
+            </label> */}
             <input
               ref={passRef}
               type="password"
@@ -112,7 +112,7 @@ const Login = () => {
         </form>
 
         {/* Warning Box */}
-        <div className="mt-6">
+        <div className="mt-3">
           <img
             src={WarningBox}
             alt="Don't Get Scammed Warning"
